@@ -1,8 +1,13 @@
 import React from 'react'
 
+// Styles scss
+import './styles-components/Footer.scss';
+
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      Created by Victor Rodriguez right of @zizicode
+    </footer>
   )
 }
 

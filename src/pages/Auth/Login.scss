@@ -1,0 +1,16 @@
+@import '../../styles/variable';
+
+.container_login{
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+
+    // display
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}

@@ -1,16 +1,18 @@
 const loginInitialite = {
-    isLogged: false
+  isLogged: false,
+  user: null,
+  token: null
 }
-  
-  const counterReducer = (state = loginInitialite, action) => {
-    switch (action.type) {
-      case 'LOGIN':
-        return { isLogged: true };
-      case 'LOGOUT':
-        return { isLogged: false };
-      default:
-        return state;
-    }
-  };
-  
-  export default counterReducer;
+
+export const counterReducer = (state = loginInitialite, action) => {
+  switch (action.type) {
+    case 'LOGIN':
+      return { isLogged: true };
+    case 'LOGOUT':
+      return { isLogged: false };
+    default:
+      return state;
+  }
+};
+
+  // export default counterReducer;
