@@ -10,8 +10,10 @@ const Home = () => {
   const items = useSelector((state) => state.itemsPoke.items);
 
   useEffect(() => {
-    dispatch(fetchItems());
-  }, [dispatch]);
+    if(!items){
+      dispatch(fetchItems());
+    }
+  },);
 
   const [searchTerm, setSearchTerm] = useState('');
   const [itemsToShow, setItemsToShow] = useState(10);
