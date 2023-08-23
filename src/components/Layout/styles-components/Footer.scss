@@ -1,0 +1,18 @@
+@import '../../../styles/variable';
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    font-size: .8em;
+    background-color: $palette-system-white;
+    color: $color-text-secundary;
+    border-top: 1px solid $palette-gray-alt;
+
+    // display
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

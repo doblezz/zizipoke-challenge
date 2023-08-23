@@ -4,9 +4,13 @@ import { Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../../redux/authAction';
 
+// scss
+import './Login.scss';
+
 const Login = () => {
     const dispatch = useDispatch();
     const isLoggedIn = useSelector((state) => state.isLogged);
+    // console.log(useSelector((state) => state))
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -19,9 +23,9 @@ const Login = () => {
         }
     }
     
-    if(!isLoggedIn){
+    if(isLoggedIn.isLogged === false){
         return (
-            <div>
+            <div className='container_login'>
                 <input 
                 type="name"
                 value={username}
