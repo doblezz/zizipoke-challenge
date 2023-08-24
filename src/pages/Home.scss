@@ -1,0 +1,223 @@
+@import '../styles/variable';
+
+.container_home {
+    width: 70%;
+    min-width: 300px;
+    padding: 45px 10px 10px 10px;
+    margin-bottom: 60px;
+    transition: $transition-slow;
+
+    // Display
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    gap: 20px;
+
+    h3 {
+        width: 60%;
+        min-width: 270px;
+        text-align: center;
+
+        span {
+            color: $color-orange;
+        }
+    }
+
+    .options_show {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        h4 {
+            font-weight: 300;
+            font-size: 19px;
+            color: $palette-gray-ext;
+        }
+
+        .button_show {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 10px;
+            
+
+            button {
+                border: 1px solid $color-orange;
+                padding: 5px 10px;
+                border-radius: 2px;
+                background-color: transparent;
+                color: $color-orange;
+                font-weight: 400;
+                cursor: pointer;
+                transition: $transition-fast;
+
+                &:hover {
+                    color: $palette-text-white;
+                    background-color: $color-orange;
+                }
+
+            }
+        }
+    }
+
+    .search {
+        width: 60%;
+        min-width: 280px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .search_ {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: nowrap;
+            border: 1px solid $color-text-primary;
+            padding: 10px;
+            border-radius: 10px;
+
+            label {
+                transform: translateY(2px);
+                color: $color-text-primary;
+                cursor: pointer;
+            }
+
+            &:focus-within {
+                border: 1px solid $palette-system-success;
+
+                label {
+                    color: $palette-system-success;
+                }
+            }
+
+            input {
+                outline: none;
+                padding: 0 10px;
+                width: 100%;
+                border: none;
+            }
+        }
+
+        span {
+            font-size: 12px;
+            padding: 5px;
+            color: $color-text-secundary;
+        }
+
+    }
+}
+
+// container items pokemons
+.container_home {
+    .container_items {
+        width: 100%;
+        margin-top: 30px;
+
+        ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; // Otra opción: flex-start, center, flex-end
+            
+            @media (max-width: 480px) {
+                gap: 20px;
+            }
+        }
+
+        .pokemon_card {
+            width: calc(33.33% - 20px); // Para tres columnas en desktop
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 10px 0px 10px 0px;
+            transition: $transition-fast;
+            user-select: none;
+            cursor: pointer;
+
+            &:hover{
+                transform: translateY(-5px);
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+
+            @media (max-width: 768px) {
+                width: calc(50% - 20px); // Dos columnas en tablet
+            }
+
+            @media (max-width: 480px) {
+                width: 90%; // Una columna en móvil
+                margin: auto;
+            }
+        }
+    }
+}
+
+// container items pokemons
+.container_home{
+    .container_items {
+        ul{
+            li{
+                padding: 10px 0;
+
+                .card_image{
+                    width: 60px;
+                    height: 60px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    margin: auto;
+
+                    img{
+                        width: 100%;
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 50%;
+                        border: 1px solid $palette-gray-alt;
+                    }
+                }
+
+                .detailsPoke{
+                    width: 90%;
+                    padding: 3px 5px;
+
+                    p{
+                        font-size: 12px;
+                        font-weight: 600;
+                        color: $palette-gray-ext;
+                        margin-top: 10px;
+                    }
+
+                    h5::first-letter{
+                        text-transform: uppercase;
+                    }
+
+                    .poke_type{
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+                        padding: 5px 0;
+
+                        // setting button color in _variable style
+                        button{
+                            border: none;
+                            padding: 3px 5px;
+                            border-radius: 2px;
+                            color: $palette-system-white;
+
+                            &::first-letter {
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

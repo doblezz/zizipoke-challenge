@@ -25,6 +25,8 @@ export const fetchItems = () => {
             let poke = response.data;
             const detailsPoke = {
               id: poke.id,
+              ability: poke.abilities,
+              stats: poke.stats,
               experience: poke.base_experience,
               type: poke.types,
               height: poke.height,
