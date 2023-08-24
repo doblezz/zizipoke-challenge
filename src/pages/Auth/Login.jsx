@@ -4,6 +4,8 @@ import { Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../../redux/authAction';
 
+import { fetchItems } from '../../redux/ItemsPokemon/ItemsPokeActions';
+
 // scss
 import './Login.scss';
 
@@ -13,7 +15,10 @@ import eye from '../../assets/images/animation/animated-eye.gif';
 const Login = () => {
     const dispatch = useDispatch();
     const isLoggedIn = useSelector((state) => state.isLogged);
-    // console.log(useSelector((state) => state))
+    
+    if (isLoggedIn.isLogged === false) {
+        dispatch(fetchItems());
+    }
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');

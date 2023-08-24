@@ -24,7 +24,6 @@ const Home = () => {
     }
   },);
 
-
   const [searchTerm, setSearchTerm] = useState('');
   const [itemsToShow, setItemsToShow] = useState(12);
   const [validatorData, setValidatorData] = useState([]);
@@ -114,13 +113,13 @@ const Home = () => {
                 </li>
               )) : <p>Cargando...</p>}
           </ul>
-              {/* Modal Details */}
-                <PokemonDetails
-                isOpen={isModalOpen} 
-                onClose={handleCloseModal} 
-                selectedIdx={selectedIdx}
-                data={items}
-                />
+          {/* Modal Details */}
+          <PokemonDetails
+            isOpen={isModalOpen}
+            onClose={handleCloseModal}
+            selectedIdx={selectedIdx}
+            data={items}
+          />
         </div>
       </div>
     );
