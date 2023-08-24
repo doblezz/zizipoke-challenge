@@ -1,12 +1,12 @@
 @import '../../../styles/variable';
 
 header {
+    position: relative;
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden;
     background-color: $palette-system-white;
     border-bottom: 1px solid $palette-gray-alt;
     user-select: none;
@@ -29,6 +29,28 @@ header {
         }
     }
 
+    // button logate
+    .logate{
+        width: 70px;
+        height: 25px;
+        position: absolute;
+        padding-bottom: 5px;
+        right: 20px;
+        top: 80px;
+        z-index: 999;
+        font-weight: 600;
+        color: $palette-system-white;
+        background-color: $palette-system-success;
+        transition: $transition-fast;
+        border-radius: 0 0 15px 15px;
+        cursor: pointer;
+        border: none;
+
+        &:hover{
+            height: 35px;
+        }
+    }
+
     div.icon {
         width: 30px;
         height: 30px;
@@ -40,8 +62,8 @@ header {
         border-radius: 30px;
         font-size: 1.2rem;
 
-        &:hover{
-            background-color:  $palette-gray-alt;
+        &:hover {
+            background-color: $palette-gray-alt;
         }
     }
 }

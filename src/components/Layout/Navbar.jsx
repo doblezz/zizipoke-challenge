@@ -24,7 +24,7 @@ const Navbar = () => {
         <img src={image} alt="logo" />
       </div>
         <h1>Zizi<span>Poke</span></h1>
-      {isLoggedIn.isLogged ? <button onClick={() => Close()}>logate</button> : ''}
+      {isLoggedIn.isLogged ? <button className='logate' onClick={() => Close()}>Sign out</button> : ''}
       
       <div className='icon'><FcAbout/></div>
     </header>

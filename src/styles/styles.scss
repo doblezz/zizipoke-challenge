@@ -22,18 +22,53 @@ html, body{
     background-color: $palette-system-white;
 }
 
+// Types pokemons color
+.normal { background-color: $color-normal; }
+.fire { background-color: $color-fire; }
+.water { background-color: $color-water; }
+.electric { background-color: $color-electric; }
+.grass { background-color: $color-grass; }
+.ice { background-color: $color-ice; }
+.fighting { background-color: $color-fighting; }
+.poison { background-color: $color-poison; }
+.ground { background-color: $color-ground; }
+.flying { background-color: $color-flying; }
+.psychic { background-color: $color-psychic; }
+.bug { background-color: $color-bug; }
+.rock { background-color: $color-rock; }
+.ghost { background-color: $color-ghost; }
+.dragon { background-color: $color-dragon; }
+.dark { background-color: $color-dark; }
+.steel { background-color: $color-steel; }
+.fairy { background-color: $color-fairy; }
+
+// Definir clases para los colores de habilidades
+.attack { background-color: $color-attack; }
+.defense { background-color: $color-defense; }
+.special-attack { background-color: $color-special-attack; }
+.special-defense { background-color: $color-special-defense; }
+.speed { background-color: $color-speed; }
+.hp { background-color: $color-hp; }
+.ability { background-color: $color-ability; }
+.hidden-ability { background-color: $color-hidden-ability; }
+.passive { background-color: $color-passive; }
+
+// container app
 .content{
+
+    position: absolute; 
+    left: 0;
+    right: 0;
     width: 80%;
     max-width: 1000px;
     min-width:300px;
-    height: 50vh;
-    transform: translateY(30px);
+    height: auto;
+    min-height: 80vh;
     margin: auto;
     overflow: hidden;
     padding: 10px;
 
-    // display
+    // Display
     display: flex;
     justify-content: center;
-    align-items: center;
 }
