@@ -5,7 +5,11 @@ Bienvenido al ZiziPoke Challenge de ZiziCode. En este proyecto, hemos desarrolla
 
 Aquí tienes una captura de pantalla del sistema en funcionamiento:
 ![ZiziPoke Screenshot](https://github.com/doblezz/zizipoke-challenge/assets/100297463/6931a824-4ed4-47ba-8711-d2c54b23cebd)
-)
+
+## Modal open
+
+![ZiziPoke Screenshot](https://github.com/doblezz/zizipoke-challenge/assets/100297463/876ec300-0961-4ac1-aa49-312e72830d28)
+
 
 ## Instalación
 
