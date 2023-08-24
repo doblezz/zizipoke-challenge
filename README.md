@@ -4,7 +4,7 @@ Bienvenido al ZiziPoke Challenge de ZiziCode. En este proyecto, hemos desarrolla
 ## Captura de Pantalla
 
 Aquí tienes una captura de pantalla del sistema en funcionamiento:
-![ZiziPoke Screenshot](![image](https://github.com/doblezz/zizipoke-challenge/assets/100297463/6931a824-4ed4-47ba-8711-d2c54b23cebd)
+![ZiziPoke Screenshot](https://github.com/doblezz/zizipoke-challenge/assets/100297463/6931a824-4ed4-47ba-8711-d2c54b23cebd)
 )
 
 ## Instalación
